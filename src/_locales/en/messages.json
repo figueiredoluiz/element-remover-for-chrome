@@ -1,0 +1,32 @@
+{
+  "extensionName": {
+    "message": "Element Remover"
+  },
+  "extensionDescription": {
+    "message": "Create rules to remove items from the page based on its CSS selector to help with testing."
+  },
+  "addRule": {
+    "message": "Add rule"
+  },
+  "clear": {
+    "message": "Clear"
+  },
+  "url": {
+    "message": "URL"
+  },
+  "selector": {
+    "message": "Selector"
+  },
+  "removeScrollBlocker": {
+    "message": "Remove scrolling blocker"
+  },
+  "noRulesSaved": {
+    "message": "No custom rules saved"
+  },
+  "saved": {
+    "message": "Saved!"
+  },
+  "remove": {
+    "message": "Remove"
+  }
+}

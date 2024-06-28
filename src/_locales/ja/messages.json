@@ -1,0 +1,32 @@
+{
+  "extensionName": {
+    "message": "エレメント削除"
+  },
+  "extensionDescription": {
+    "message": "CSSセレクターに基づいてページからアイテムを削除するルールを作成して、テストに役立てます。"
+  },
+  "addRule": {
+    "message": "ルール追加"
+  },
+  "clear": {
+    "message": "クリア"
+  },
+  "url": {
+    "message": "URL"
+  },
+  "selector": {
+    "message": "セレクター"
+  },
+  "removeScrollBlocker": {
+    "message": "スクロールブロッカーを削除"
+  },
+  "noRulesSaved": {
+    "message": "カスタムルールが保存されていません"
+  },
+  "saved": {
+    "message": "保存されました！"
+  },
+  "remove": {
+    "message": "削除"
+  }
+}

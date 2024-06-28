@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><span id="extensionName"></span></title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    body { width: 400px; height: 340px; overflow: hidden; }
+    .content { height: calc(100% - 48px); overflow-y: auto; }
+  </style>
+</head>
+<body>
+  <h1 class="text-xl font-bold mb-0 bg-blue-500 text-white p-2" id="extensionNameHeader"></h1>
+  <div class="content">
+    <div class="p-4 m-2 shadow-md rounded">
+      <form id="modifierForm" class="space-y-4">
+        <div class="flex items-center space-x-2">
+          <label for="url" class="w-1/4" id="urlLabel"></label>
+          <input type="text" id="url" name="url" class="flex-grow border p-2 rounded" required>
+        </div>
+        <div class="flex items-center space-x-2">
+          <label for="selector" class="w-1/4" id="selectorLabel"></label>
+          <input type="text" id="selector" name="selector" class="flex-grow border p-2 rounded" required>
+        </div>
+        <div class="flex items-center space-x-2">
+          <input type="checkbox" id="removeScrollBlocker" name="removeScrollBlocker" class="form-checkbox">
+          <label for="removeScrollBlocker" class="select-none" id="removeScrollBlockerLabel"></label>
+        </div>
+        <div class="flex space-x-2">
+          <button type="submit" class="flex-grow bg-blue-500 text-white p-2 rounded flex items-center justify-center">
+            <span class="material-icons mr-2">add</span><span id="addRuleButton"></span>
+          </button>
+          <button type="reset" class="flex-grow bg-gray-500 text-white p-2 rounded flex items-center justify-center">
+            <span class="material-icons mr-2">clear</span><span id="clearButton"></span>
+          </button>
+        </div>
+      </form>
+    </div>
+    <div id="status" class="mt-4 text-green-500 m-2"></div>
+    <hr class="my-4 mx-2">
+    <div id="noRulesMessage" class="hidden bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 m-2" role="alert">
+      <p id="noRulesMessageText"></p>
+    </div>
+    <div class="m-2">
+      <table id="rulesTableContainer" class="hidden mt-4 w-full border-collapse table-fixed">
+        <thead>
+          <tr>
+            <th class="border p-2 bg-gray-200">URL</th>
+            <th class="border p-2 bg-gray-200">Selector</th>
+            <th class="border p-2 bg-gray-200 w-12"></th>
+          </tr>
+        </thead>
+        <tbody id="rulesTable">
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+  <script src="i18n.js"></script>
+</body>
+</html>

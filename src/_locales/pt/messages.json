@@ -1,0 +1,32 @@
+{
+  "extensionName": {
+    "message": "Removedor de Elementos"
+  },
+  "extensionDescription": {
+    "message": "Crie regras para remover itens da página com base no seu seletor CSS para ajudar nos testes."
+  },
+  "addRule": {
+    "message": "Adicionar regra"
+  },
+  "clear": {
+    "message": "Limpar"
+  },
+  "url": {
+    "message": "URL"
+  },
+  "selector": {
+    "message": "Seletor"
+  },
+  "removeScrollBlocker": {
+    "message": "Remover bloqueador de rolagem"
+  },
+  "noRulesSaved": {
+    "message": "Nenhuma regra personalizada salva"
+  },
+  "saved": {
+    "message": "Salvo!"
+  },
+  "remove": {
+    "message": "Remover"
+  }
+}
